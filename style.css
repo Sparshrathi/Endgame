@@ -1,0 +1,208 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+
+/*Adding the player1 as batman and player2 as supperman*/
+
+#superman {
+    widows: 100px;
+    width: 100px;
+    height: 65px;
+    display: block;
+    margin: 0 auto;
+}
+
+#batman {
+    widows: 100px;
+    width: 100px;
+    height: 65px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Adding the images to the players classes*/
+
+.grid-item.unavailable.player1 {
+    background-image: url("images/batman.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px 70px;
+    margin: auto;
+}
+
+.grid-item.unavailable.player2 {
+    background-image: url("images/superman.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px 70px;
+    margin: auto;
+}
+
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
+.row.content {
+    height: 450px
+}
+
+
+/* Set gray background color and 100% height */
+
+.sidenavBat {
+    padding-top: 20px;
+    background-color: #ffea27;
+    height: 100%;
+    margin-top:130px;
+}
+
+.sidenavSupper {
+    padding-top: 20px;
+    background-color: #0b5fd2;
+    height: 100%;
+    margin-top:130px ;
+}
+
+
+/* Set black background color, white text and some padding */
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {
+        height: auto;
+    }
+}
+
+#battle-field {
+    border-radius: 7px;
+    padding-right: 1px;
+    padding-left: 1px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+.grid-item {
+    background-color: rgb(149, 235, 247);
+    outline: 2px solid rgba(138, 247, 138, 0);
+    border-radius: 7px;
+    border-color: #555;
+    width: 60px;
+    height: 50px;
+    display: inline-flex;
+    margin: 0px auto;
+    padding: 5px;
+}
+
+.grid-item.unavailable {
+    background: #616161;
+}
+
+.grid-item.weapons {
+    background-color: rgb(253, 253, 253);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px 50px;
+    margin: auto;
+}
+
+.player-weapon {
+    width: 60px;
+    height: 50px;
+    display: inline-flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px 50px;
+    margin: auto;
+}
+
+.grid-item.weapon1,
+.player-weapon.weapon1 {
+    background-image: url("images/gun.jpg");
+}
+
+.grid-item.weapon2,
+.player-weapon.weapon2 {
+    background-image: url("images/hammer.png");
+}
+
+.grid-item.weapon3,
+.player-weapon.weapon3 {
+    background-image: url("images/sword.png");
+}
+
+.grid-item.weapon4,
+.player-weapon.weapon4 {
+    background-image: url("images/bomb.png");
+}
+
+.grid-item.shield,
+.player-weapon.shield {
+    background-image: url("images/shield.png");
+}
+
+.grid-item.block {
+    background-image: url("images/blocks.png");
+    height: 50px;
+    width: 60px;
+}
+
+.active-player {
+    border: 4px dotted red;
+}
+
+.highlight {
+    background-color: #45fb18;
+    cursor: pointer;
+}
+
+.player-life {
+    color: #ff0000;
+}
+
+.jumbotrone
+{
+  height: 130px;  
+  border-style: double;
+}
+
+#heading
+{
+    margin-top: auto;
+    text-align: center;
+    font-style: oblique;
+    font-family: monospace;
+    color: #ff0000;
+    font-size: 60px;
+    background-color: black;
+}
+
+#w1
+{
+    margin-left: 130px;
+}
+
+section
+{
+text-align: center;
+margin-top: 150px;
+}

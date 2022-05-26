@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Endgame</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Rules</h4>
+            </div>
+            <div class="modal-body">
+              <div class="alert alert-info">
+                If players cross over adjacent squares (horizontally or vertically), a battle begins.<br><br>
+           
+               During combat, the game works is as follows:<br>
+               
+              # Each player attacks in turn<br>
+               
+              # The damage depends on the player's weapon<br>
+               
+              # The player can choose to attack or defend against the next shot<br>
+               
+              # If the player chooses to defend themselves, they sustain 50% less damage than normal<br>
+               
+              # As soon as the life points of a player (initially 100) falls to 0, they lose. A message appears and the game is over.
+             </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+  <h1 id="heading">Endgame</h1>
+
+<div class="jumbotrone">
+   
+    <div class="col-sm-12 text-center bg-light weaponds">
+        <div class="row">
+            <div class="col-sm-2"  id="w1"><h5>Gun</h5><img src='images/gun.jpg' height="40" width="40" alt="Shiled"><p>Damage: 15</p></div>	
+            <div class="col-sm-2"><h5>Shield</h5><img src='images/shield.png' height="40" width="40" alt="Thor"><p>Damage: 20</p></div>
+            <div class="col-sm-2"><h5>Hammer</h5><img src='images/hammer.png' height="40" width="40" alt="Arrow"><p>Damage: 25</p></div>
+            <div class="col-sm-2"><h5>Sword</h5><img src='images/sword.png' height="40" width="40" alt="Thor"><p>Damage: 30</p></div>		
+            <div class="col-sm-2"><h5>Bomb</h5><img src='images/bomb.png' height="40" width="40"alt="Axe"><p>Damage: 35</p></div>
+          </div>
+    </div>
+
+<section style="text-align: center;">
+  
+    <button class="btn btn-success" id="start-game"> Start Game</button>
+
+</section>
+
+<div id="field" class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenavBat player1-content">
+      <h3>Player 1</h3>
+      <img src="images/batman.png" id="batman">
+      <h3>Life: <span id="player1-health"></span></h3>
+      <h2 class="player-life player1-life "></h2>
+    
+      <h3>Weapon: </h3>
+      <p>
+        <span id="player1-weapon" class= "player-weapon"></span>
+      </p>
+      <h3>Damage: <span id="player1-damage"></span></h3>   
+      <div class="player-buttons player1-buttons hidden">
+        <button id="attack1" class="fightButton attackButton btn btn-danger">Attack</button>
+        <button id="defend1" class="fightButton defendButton btn btn-warning">Defend</button>
+      </div>  
+           
+    </div>
+    <div class="col-sm-8 text-left"> 
+
+      
+      <div id="battle-field">
+
+
+      </div>
+    </div>
+    <div class="col-sm-2 sidenavSupper player2-content">
+        <h3>Player 2</h3>
+        <img src="images/superman.png" id="superman">
+          <h3>Life: <span id="player2-health"></span></h3>
+          <h2 class="player-life player2-life "></h2>
+	      	<h3>Weapon: </h3>
+	      	<p>
+            <span id="player2-weapon" class= "player-weapon"></span>
+          </p>
+	      	 <h3>Damage: <span id="player2-damage"></span></h3>
+           <div class="player-buttons player2-buttons hidden">
+            <button id="attack2" class="fightButton2 attackButton btn btn-danger ">Attack</button>
+            <button id="defend2" class="fightButton2 defendButton btn btn-warning">Defend</button>
+           </div> 
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <h2>Rules</h2>
+  <div class="alert alert-info">
+     If players cross over adjacent squares (horizontally or vertically), a battle begins.<br><br>
+
+    During combat, the game works is as follows:<br>
+    
+   # Each player attacks in turn<br>
+    
+   # The damage depends on the player's weapon<br>
+    
+   # The player can choose to attack or defend against the next shot<br>
+    
+   # If the player chooses to defend themselves, they sustain 50% less damage than normal<br>
+    
+   # As soon as the life points of a player (initially 100) falls to 0, they lose. A message appears and the game is over.
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="data.js"></script>
+  <script src="field.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
